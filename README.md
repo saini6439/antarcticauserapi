@@ -11,17 +11,17 @@ git clone https://github.com/saini6439/antarcticauserapi.git
 ```shell
 npm install
 ```
-Configure mongodb and secret key in config.js file
++ Configure mongodb and secret key in config.js file
 ```shell
 in my case it's mongodb://localhost/EmployeeDB
 host: localhost
 database name: EmployeeDB
 ```
-Now Start application
++ Now Start application
 ```shell
 npm start
 ```
-How to register a new user with Postman
++ How to register a new user with Postman
 ```
 To register a new user with the api follow these steps:
 
@@ -40,7 +40,7 @@ To register a new user with the api follow these steps:
 }
 6.Click the "Send" button, you should receive a "200 OK" response with an empty JSON object in the response body.
 ```
-How to authenticate a user with Postman
++ How to authenticate a user with Postman
 ```
 To authenticate a user with the api and get a JWT token follow these steps:
 
@@ -55,7 +55,7 @@ To authenticate a user with the api and get a JWT token follow these steps:
 }
 6.Click the "Send" button, you should receive a "200 OK" response with the user details including a JWT token in the response body, make a copy of the token value because we'll be using it in the next step to make an authenticated request.
 ```
-How to make an authenticated request to retrieve all users
++ How to make an authenticated request to retrieve all users
 ```
 To make an authenticated request using the JWT token from the previous step, follow these steps:
 
@@ -68,7 +68,4 @@ To make an authenticated request using the JWT token from the previous step, fol
 
 4. In header enter "Authorization" in key field and your token into values field along with Bearer keyword "Bearer yourtoken".
 5. Click the "Send" button, you should receive a "200 OK" response containing a JSON array result.
-
-
-
 ```
